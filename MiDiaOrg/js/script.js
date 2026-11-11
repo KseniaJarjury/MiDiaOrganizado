@@ -3,6 +3,8 @@ const formularioLogin = document.getElementById("form-login");
 const campoUsuario = document.getElementById("usuario");
 const campoContrasena = document.getElementById("contrasena");
 const mensajeLogin = document.getElementById("mensaje-login");
+const seccionLogin = document.getElementById("seccion-login");
+const panelTareas = document.getElementById("panel-tareas");
 
 const usuarioEsperado = "dara";
 const contrasenaEsperada = "1234";
@@ -23,9 +25,12 @@ formularioLogin.addEventListener("submit", function (evento) {
             elemento.textContent = nombreUsuario;
         });
         document.getElementById("inicial-usuario").textContent = nombreUsuario.charAt(0);
+        document.querySelectorAll("[data-inicial-usuario]").forEach(function (elemento) {
+            elemento.textContent = nombreUsuario.charAt(0);
+        });
         document.getElementById("anio-actual").textContent = String(new Date().getFullYear());
-        document.getElementById("seccion-login").classList.add("d-none");
-        document.getElementById("panel-tareas").classList.remove("d-none");
+        seccionLogin.classList.add("d-none");
+        panelTareas.classList.remove("d-none");
     } else {
         mensajeLogin.innerHTML = `
             <div class="alert alert-danger">
@@ -33,6 +38,21 @@ formularioLogin.addEventListener("submit", function (evento) {
             </div>
         `;
     }
+});
+
+document.querySelectorAll("[data-cerrar-sesion]").forEach(function (boton) {
+    boton.addEventListener("click", function () {
+        panelTareas.classList.add("d-none");
+        seccionLogin.classList.remove("d-none");
+        const menuMovil = document.getElementById("nav-mobile");
+        if (menuMovil.classList.contains("show")) {
+            bootstrap.Collapse.getOrCreateInstance(menuMovil).hide();
+        }
+        campoUsuario.value = "";
+        campoContrasena.value = "";
+        mensajeLogin.replaceChildren();
+        campoUsuario.focus();
+    });
 });
 
 // Elementos del formulario de tareas
@@ -207,7 +227,6 @@ formularioTarea.addEventListener("submit", function (evento) {
 });
 
 // Mostrar las tareas en pantalla
-
 function mostrarTareas() {
     listaTareas.innerHTML = "";
 
