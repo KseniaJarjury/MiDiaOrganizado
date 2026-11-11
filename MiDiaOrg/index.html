@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mi día organizado</title>
+
+            <link
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+                rel="stylesheet"
+            >
+            <link rel="stylesheet" href="css/styles.css?v=31">
+        </head>
+
+        <body data-bs-theme="dark">
+            <div class="container-fluid p-0">
+
+                <section id="seccion-login" class="login-scene container-fluid min-vh-100 d-flex align-items-center justify-content-center position-relative overflow-hidden py-5">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-none d-xl-flex flex-column justify-content-between p-5 z-0" aria-hidden="true">
+                        <div class="row g-4 mx-0">
+                            <div class="col-3 offset-1">
+                                <div class="card bg-body-tertiary border-primary-subtle p-3 rounded-4 shadow">
+                                    <span class="small text-primary fw-semibold">OCTUBRE</span>
+                                    <span class="display-6 fw-bold lh-1">27</span>
+                                    <span class="small text-body-secondary">Organizá tu día</span>
+                                </div>
+                            </div>
+                            <div class="col-3 offset-4 mt-5 pt-4">
+                                <div class="card bg-body-tertiary border-warning-subtle p-3 rounded-4 shadow">
+                                    <span class="small text-body-secondary mb-2">Tus categorías</span>
+                                    <span class="badge text-bg-primary rounded-pill mb-1">📚 Estudio</span>
+                                    <span class="badge text-bg-warning rounded-pill">🏡 Hogar</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 mx-0 align-items-center">
+                            <div class="col-3">
+                                <div class="d-flex flex-column align-items-start gap-3">
+                                    <div class="d-flex flex-wrap align-items-center gap-2">
+                                        <span class="fs-4 text-warning opacity-50 ms-5" aria-hidden="true">✦</span>
+                                        <span class="badge rounded-pill text-bg-primary bg-opacity-75 shadow">📅 Lunes</span>
+                                        <span class="small text-body-secondary ms-3">09:00　✧　11:30</span>
+                                        <span class="badge rounded-pill text-bg-success bg-opacity-75 shadow">✓ En marcha</span>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center gap-2 ms-3">
+                                        <span class="fs-2 text-danger opacity-50 ms-4" aria-hidden="true">♥</span>
+                                        <span class="fs-3 text-info opacity-75 ms-5" aria-hidden="true">◷</span>
+                                        <span class="badge rounded-pill text-bg-danger bg-opacity-75 shadow">⚡ Prioridad alta</span>
+                                        <span class="small text-body-secondary ms-5">⌛ Próxima tarea · 10:30</span>
+                                        <span class="small text-primary opacity-75 ms-5" aria-hidden="true">•　·　•</span>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center gap-2">
+                                        <span class="badge rounded-pill text-bg-warning bg-opacity-75 shadow ms-4">✦ 3 objetivos</span>
+                                        <span class="badge rounded-pill text-bg-info bg-opacity-75 shadow ms-4">✎ Apunte listo</span>
+                                        <span class="badge rounded-pill text-bg-danger bg-opacity-75 shadow ms-3">🌷 Personal</span>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center gap-2 ms-4">
+                                        <span class="small text-warning opacity-75 ms-5">✦ Enfoque</span>
+                                        <span class="small text-info opacity-75 ms-2">☼　☁　✧</span>
+                                        <span class="text-success opacity-75 ms-2" aria-hidden="true">✧　·　✧</span>
+                                        <span class="badge rounded-pill text-bg-success bg-opacity-75 shadow ms-5">✓ Buen ritmo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 offset-6">
+                                <div class="d-flex flex-column align-items-start gap-3">
+                                    <div class="d-flex flex-wrap align-items-center gap-2">
+                                        <span class="fs-2 text-info opacity-50 ms-5" aria-hidden="true">✧</span>
+                                        <span class="badge rounded-pill text-bg-info bg-opacity-75 shadow ms-4">✦ Nuevo día</span>
+                                        <span class="small text-warning opacity-75 ms-3" aria-hidden="true">·　•　·</span>
+                                        <span class="badge rounded-pill text-bg-primary bg-opacity-75 shadow">☑ Lista del día</span>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center gap-2 ms-3">
+                                        <span class="fs-2 text-warning opacity-75 ms-5" aria-hidden="true">✧</span>
+                                        <span class="badge rounded-pill text-bg-warning bg-opacity-75 shadow">⏰ Recordatorio</span>
+                                        <span class="small text-body-secondary ms-5">◷ 2 avisos para hoy</span>
+                                        <span class="fs-2 text-danger opacity-50 ms-4" aria-hidden="true">♡</span>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center gap-2">
+                                        <span class="small text-success opacity-75 ms-4">✓ Pequeños avances</span>
+                                        <span class="small text-info opacity-75 ms-5">◦　◦　◦　◦</span>
+                                        <span class="badge rounded-pill text-bg-warning bg-opacity-75 shadow ms-3">✦ 2 pendientes</span>
+                                        <span class="badge rounded-pill text-bg-primary bg-opacity-75 shadow ms-4">💻 Trabajo</span>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center gap-2 ms-4">
+                                        <span class="fs-4 text-primary opacity-75 ms-5" aria-hidden="true">✦</span>
+                                        <span class="small text-warning opacity-75 ms-2">☼　Día en marcha</span>
+                                        <span class="badge rounded-pill text-bg-info bg-opacity-75 shadow ms-5">☕ Pausa</span>
+                                        <span class="badge rounded-pill text-bg-success bg-opacity-75 shadow ms-2">★ Meta cumplida</span>
+                                        <span class="small text-primary opacity-75 ms-5" aria-hidden="true">✧　•　✧</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 mx-0 align-items-end pb-3">
+                            <div class="col-3 offset-2 mb-4">
+                                <div class="card bg-body-tertiary border-success-subtle p-3 rounded-4 shadow">
+                                    <span class="fw-semibold mb-2">✦ Para hoy</span>
+                                    <span class="small text-body-secondary">✓ Estudiar</span>
+                                    <span class="small text-body-secondary">◯ Hacer compras</span>
+                                </div>
+                            </div>
+                            <div class="col-3 offset-3">
+                                <div class="card bg-body-tertiary border-info-subtle p-3 rounded-4 shadow">
+                                    <span class="small text-body-secondary">Tu semana</span>
+                                    <span class="h4 text-info fw-bold mb-0">✦ 5 tareas listas</span>
+                                    <span class="progress mt-2"><span class="progress-bar bg-info" style="width: 72%"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-absolute top-0 start-50 translate-middle-x mt-5 d-flex align-items-center gap-2 bg-body-tertiary bg-opacity-75 border border-primary-subtle rounded-pill px-3 py-2 shadow">
+                            <span class="text-primary" aria-hidden="true">✦</span>
+                            <span class="small text-body-secondary">Un día para organizar</span>
+                            <span class="badge rounded-pill text-bg-primary">A tu ritmo</span>
+                        </div>
+                        <div class="position-absolute bottom-0 start-50 translate-middle-x mb-5 d-flex align-items-center gap-2 bg-body-tertiary bg-opacity-75 border border-info-subtle rounded-pill px-3 py-2 shadow">
+                            <span class="text-info" aria-hidden="true">☼</span>
+                            <span class="small text-body-secondary">Cada paso cuenta</span>
+                            <span class="text-warning" aria-hidden="true">✧</span>
+                        </div>
+                    </div>
+                    <div class="card bg-body-tertiary bg-opacity-75 border-secondary-subtle shadow-lg rounded-4 w-100 position-relative z-1" style="max-width: 430px; backdrop-filter: blur(12px);">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="text-center mb-4">
+                                <span class="badge rounded-pill text-bg-primary px-3 py-2 mb-3">✦ MI DÍA</span>
+                                <h1 class="h2 fw-bold">Organizá tu día</h1>
+                                <p class="text-body-secondary mb-0">Tus tareas, tus objetivos, tu progreso.</p>
+                            </div>
+
+                            <form id="form-login">
+                                <div class="mb-3">
+                                    <label for="usuario" class="form-label">Usuario</label>
+                                    <input type="text" class="form-control form-control-lg" id="usuario" placeholder="Ingresá tu usuario" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="contrasena" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control form-control-lg" id="contrasena" placeholder="Ingresá tu contraseña" required>
+                                </div>
+
+                                <div id="mensaje-login" class="mb-3"></div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Ingresar</button>
+                                <p class="text-body-secondary small text-center mt-3 mb-0">Acceso de demostración</p>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="panel-tareas" class="d-none position-relative">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-none d-xl-flex flex-column justify-content-around p-4 pe-none z-0" aria-hidden="true">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <span class="fs-4 text-primary opacity-50 ms-5">✦　·　✧</span>
+                            <span class="badge rounded-pill text-bg-info bg-opacity-25 text-info">◷ Un paso a la vez</span>
+                            <span class="fs-3 text-warning opacity-50">✧　•　✧</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge rounded-pill text-bg-primary bg-opacity-25 text-primary">☑ Tus objetivos</span>
+                            <span class="fs-4 text-danger opacity-50">♡　✦</span>
+                            <span class="badge rounded-pill text-bg-success bg-opacity-25 text-success">✦ Buen progreso</span>
+                        </div>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <span class="fs-3 text-info opacity-50">·　◦　·</span>
+                            <span class="badge rounded-pill text-bg-warning bg-opacity-25 text-warning">☼ A tu ritmo</span>
+                            <span class="fs-4 text-primary opacity-50 me-5">✧　★　✧</span>
+                        </div>
+                    </div>
+                    <div class="row g-0 min-vh-100 position-relative z-1">
+                        <aside class="col-lg-2 d-none d-lg-flex flex-column sticky-top vh-100 overflow-auto border-end border-secondary-subtle bg-body-tertiary p-3 p-xl-4">
+                            <a class="navbar-brand fw-bold mb-5 text-decoration-none" href="#dashboard">
+                                <span class="text-primary">✦</span> Mi día
+                            </a>
+
+                            <span class="small text-uppercase text-body-secondary fw-semibold mb-2">Organización</span>
+                            <nav class="nav nav-pills menu-principal flex-column gap-2" style="--bs-nav-pills-link-active-bg: var(--bs-primary);">
+                                <a class="nav-link active" href="#dashboard">▦ &nbsp; Dashboard</a>
+                                <a class="nav-link text-body-secondary" href="#mis-tareas">☷ &nbsp; Mis tareas</a>
+                                <a class="nav-link text-body-secondary" href="#progreso">◷ &nbsp; Progreso</a>
+                                <a class="nav-link text-body-secondary" href="#pie-pagina">✦ &nbsp; Ir al final</a>
+                            </nav>
+
+                            <div class="mt-auto border-top border-secondary-subtle pt-3">
+                                <div class="d-flex align-items-center gap-2">
+                                    <span id="inicial-usuario" class="badge rounded-circle text-bg-primary p-2">M</span>
+                                    <div>
+                                        <div class="small fw-semibold">Mi cuenta</div>
+                                        <div class="small text-body-secondary" data-nombre-usuario>Demo</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <div class="col-12 col-lg-10">
+                            <div class="sticky-top bg-body-tertiary">
+                            <header class="navbar bg-body-tertiary border-bottom border-secondary-subtle px-3 px-md-4 py-3">
+                                <a class="navbar-brand d-lg-none fw-bold mb-0" href="#dashboard">
+                                    <span class="text-primary">✦</span> Mi día
+                                </a>
+                                <span class="navbar-text d-none d-lg-inline text-body-secondary">Tu espacio personal</span>
+                                <button class="navbar-toggler d-lg-none ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#nav-mobile" aria-controls="nav-mobile" aria-expanded="false" aria-label="Abrir navegación">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <a href="#agregar-tarea" class="btn btn-primary ms-auto">＋ <span class="d-none d-sm-inline">Nueva tarea</span></a>
+                            </header>
+                            <div class="collapse d-lg-none bg-body-tertiary border-bottom border-secondary-subtle p-3" id="nav-mobile">
+                                <nav class="nav nav-pills menu-principal flex-column gap-2" style="--bs-nav-pills-link-active-bg: var(--bs-primary);">
+                                    <a class="nav-link active" href="#dashboard">▦ &nbsp; Dashboard</a>
+                                    <a class="nav-link text-body-secondary" href="#mis-tareas">☷ &nbsp; Mis tareas</a>
+                                    <a class="nav-link text-body-secondary" href="#progreso">◷ &nbsp; Progreso</a>
+                                    <a class="nav-link text-body-secondary" href="#pie-pagina">✦ &nbsp; Ir al final</a>
+                                </nav>
+                            </div>
+                            </div>
+
+                            <main class="container-fluid p-3 p-md-4 p-xl-5">
+                                <section id="dashboard" class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+                                    <div>
+                                        <p class="small text-primary text-uppercase fw-semibold mb-1">Tu espacio personal</p>
+                                        <h1 class="h2 fw-bold mb-1">¡Hola, <span data-nombre-usuario>amigo</span>! 👋</h1>
+                                        <p class="text-body-secondary mb-0">Cada pequeño paso también cuenta. ¿Qué hacemos hoy?</p>
+                                    </div>
+                                    <div class="d-flex align-items-end gap-2">
+                                        <div>
+                                            <label for="fecha-seleccionada" class="form-label small mb-1">Ver tareas del día</label>
+                                            <input type="date" class="form-control" id="fecha-seleccionada">
+                                        </div>
+                                        <button type="button" class="btn btn-primary" id="boton-hoy">Hoy</button>
+                                    </div>
+                                </section>
+
+                                <section class="bg-primary bg-gradient text-white rounded-4 p-4 p-md-5 mb-4 shadow" aria-labelledby="titulo-enfoque">
+                                    <div class="row align-items-center g-4">
+                                        <div class="col-12 col-lg-8">
+                                            <span class="badge rounded-pill bg-white bg-opacity-25 mb-3">✦ Tu enfoque de hoy</span>
+                                            <h2 id="titulo-enfoque" class="h3 fw-bold mb-2">Cada gran día empieza con un paso</h2>
+                                            <p id="mensaje-enfoque" class="mb-3 text-white-50">Organizá tus tareas y avanzá a tu propio ritmo.</p>
+                                            <a href="#mis-tareas" class="btn btn-light text-primary fw-semibold rounded-pill px-4">Ver mis tareas <span aria-hidden="true">→</span></a>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div class="rounded-4 bg-black bg-opacity-10 p-3 p-md-4">
+                                                <div class="d-flex justify-content-between align-items-end mb-2">
+                                                    <span class="small fw-semibold">Tu avance</span>
+                                                    <span id="porcentaje-enfoque" class="h3 fw-bold mb-0">0%</span>
+                                                </div>
+                                                <div class="progress bg-black bg-opacity-25" role="progressbar" aria-label="Progreso de tareas del día" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                                    <div id="barra-enfoque" class="progress-bar bg-white rounded-pill" style="width: 0%"></div>
+                                                </div>
+                                                <p id="resumen-enfoque" class="small text-white-50 mt-2 mb-0">0 de 0 tareas completadas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section id="estadisticas" class="row g-3 mb-4">
+                                    <div class="col-12 col-sm-6 col-xl-4">
+                                        <div class="card h-100 bg-body-tertiary border-secondary-subtle">
+                                            <div class="card-body d-flex align-items-center gap-3">
+                                                <span class="badge text-bg-primary fs-4 p-3">▤</span>
+                                                <div>
+                                                    <p class="text-body-secondary mb-1">Total de tareas</p>
+                                                    <p class="h2 fw-bold mb-0" id="total-tareas">0</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-4">
+                                        <div class="card h-100 bg-body-tertiary border-secondary-subtle">
+                                            <div class="card-body d-flex align-items-center gap-3">
+                                                <span class="badge text-bg-warning fs-4 p-3">◷</span>
+                                                <div>
+                                                    <p class="text-body-secondary mb-1">Pendientes</p>
+                                                    <p class="h2 fw-bold mb-0" id="tareas-pendientes">0</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-xl-4">
+                                        <div class="card h-100 bg-body-tertiary border-secondary-subtle">
+                                            <div class="card-body d-flex align-items-center gap-3">
+                                                <span class="badge text-bg-success fs-4 p-3">✓</span>
+                                                <div>
+                                                    <p class="text-body-secondary mb-1">Completadas</p>
+                                                    <p class="h2 fw-bold mb-0" id="tareas-completadas">0</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="row g-4 mb-4" aria-label="Resumen semanal y mensual">
+                                    <div class="col-12 col-xl-7">
+                                        <div class="card h-100 bg-body-tertiary border-secondary-subtle">
+                                            <div class="card-body p-4">
+                                                <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                                                    <div>
+                                                        <h2 class="h5 fw-bold mb-1">Progreso semanal</h2>
+                                                        <p id="rango-semana" class="small text-body-secondary mb-0"></p>
+                                                    </div>
+                                                    <span id="resumen-semana" class="badge text-bg-primary rounded-pill"></span>
+                                                </div>
+                                                <div id="progreso-semana" class="d-grid gap-2" aria-label="Progreso por día de la semana"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-xl-5">
+                                        <div class="card h-100 bg-body-tertiary border-secondary-subtle">
+                                            <div class="card-body p-4">
+                                                <h2 class="h5 fw-bold mb-1">Progreso mensual</h2>
+                                                <p id="rango-mes" class="small text-body-secondary mb-4"></p>
+                                                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-4">
+                                                    <svg
+                                                        id="anillos-mes"
+                                                        class="mw-100 overflow-visible flex-shrink-0"
+                                                        viewBox="0 0 180 180"
+                                                        width="160"
+                                                        height="160"
+                                                        role="img"
+                                                        aria-label="Progreso mensual por categoría"
+                                                    >
+                                                        <circle class="anillo-fondo" cx="90" cy="90" r="76" transform="rotate(-90 90 90)"></circle>
+                                                        <circle class="anillo-categoria" data-categoria="Estudio" cx="90" cy="90" r="76" stroke="#8b5cf6" transform="rotate(-90 90 90)"></circle>
+                                                        <circle class="anillo-fondo" cx="90" cy="90" r="60" transform="rotate(-90 90 90)"></circle>
+                                                        <circle class="anillo-categoria" data-categoria="Trabajo" cx="90" cy="90" r="60" stroke="#ec4899" transform="rotate(-90 90 90)"></circle>
+                                                        <circle class="anillo-fondo" cx="90" cy="90" r="44" transform="rotate(-90 90 90)"></circle>
+                                                        <circle class="anillo-categoria" data-categoria="Personal" cx="90" cy="90" r="44" stroke="#14b8a6" transform="rotate(-90 90 90)"></circle>
+                                                        <circle class="anillo-fondo" cx="90" cy="90" r="28" transform="rotate(-90 90 90)"></circle>
+                                                        <circle class="anillo-categoria" data-categoria="Hogar" cx="90" cy="90" r="28" stroke="#f59e0b" transform="rotate(-90 90 90)"></circle>
+                                                        <text id="porcentaje-mes" x="90" y="87" text-anchor="middle" fill="var(--bs-body-color)" font-size="1.25rem" font-weight="700">0%</text>
+                                                        <text x="90" y="104" text-anchor="middle" fill="var(--bs-secondary-color)" font-size="0.6rem">del mes</text>
+                                                    </svg>
+                                                    <div class="text-center text-sm-start">
+                                                        <div id="resumen-categorias-mes" class="d-grid gap-2"></div>
+                                                        <p class="small text-body-secondary mt-3 mb-0">
+                                                            <span id="completadas-mes" class="fw-bold text-body">0</span> de
+                                                            <span id="total-mes" class="fw-bold text-body">0</span> tareas completadas
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <div class="row g-4 mb-4">
+                                    <section id="progreso" class="col-12 col-xl-6">
+                                        <div class="card h-100 bg-body-tertiary border-secondary-subtle">
+                                            <div class="card-body p-4">
+                                                <h2 class="h5 fw-bold mb-1">Progreso de hoy</h2>
+                                                <p class="small text-body-secondary mb-4">Tu avance y el balance de tus actividades.</p>
+                                                <div class="row g-3 align-items-center">
+                                                    <div class="col-12 col-sm-6 text-center">
+                                                        <div
+                                                            id="circulo-progreso"
+                                                            class="ratio ratio-1x1 rounded-circle mx-auto mb-3"
+                                                            style="width: 9rem; background: conic-gradient(var(--bs-primary) 0%, var(--bs-secondary-bg) 0%);"
+                                                            role="img"
+                                                            aria-label="0% de tareas completadas"
+                                                        >
+                                                            <div class="position-absolute top-50 start-50 translate-middle w-75 h-75 rounded-circle bg-body-tertiary d-flex flex-column align-items-center justify-content-center">
+                                                                <span id="porcentaje-progreso" class="h2 fw-bold mb-0">0%</span>
+                                                                <span class="small text-body-secondary">completado</span>
+                                                            </div>
+                                                        </div>
+                                                        <p id="mensaje-progreso" class="small text-body-secondary mb-0">
+                                                            ¡Vamos! Cada tarea completada cuenta.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <h3 class="small text-uppercase text-body-secondary fw-semibold mb-3">Tareas por categoría</h3>
+                                                        <div class="d-flex flex-column align-items-center">
+                                                            <div
+                                                                id="circulo-categorias"
+                                                                class="ratio ratio-1x1 rounded-circle flex-shrink-0 mb-3"
+                                                                style="width: 6rem; background: conic-gradient(var(--bs-secondary-bg) 0% 100%);"
+                                                                role="img"
+                                                                aria-label="Distribución de tareas por categoría"
+                                                            >
+                                                                <div class="position-absolute top-50 start-50 translate-middle w-75 h-75 rounded-circle bg-body-tertiary d-flex flex-column align-items-center justify-content-center">
+                                                                    <span id="total-categorias" class="h3 fw-bold mb-0">0</span>
+                                                                    <span class="small text-body-secondary">tareas</span>
+                                                                </div>
+                                                            </div>
+                                                            <ul id="desglose-categorias" class="list-unstyled small mb-0 w-100" aria-label="Porcentaje de tareas por categoría"></ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section id="agregar-tarea" class="col-12 col-xl-6">
+                                        <div class="card h-100 bg-body-tertiary border-secondary-subtle">
+                                            <div class="card-body p-4">
+                                                <h2 class="h5 fw-bold mb-3">＋ Agregar una tarea</h2>
+                                                <p class="small text-body-secondary">Se agregará al día seleccionado: <span id="fecha-nueva-tarea" class="text-body fw-semibold"></span></p>
+                                                <form id="form-tarea">
+                                                    <div class="mb-3">
+                                                        <label for="titulo-tarea" class="form-label">¿Qué tenés que hacer?</label>
+                                                        <input type="text" class="form-control" id="titulo-tarea" placeholder="Ej.: Estudiar JavaScript" required>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="descripcion-tarea" class="form-label">Apunte <span class="text-body-secondary fw-normal">(opcional)</span></label>
+                                                        <textarea class="form-control" id="descripcion-tarea" rows="2" placeholder="Agregá un detalle o recordatorio..."></textarea>
+                                                    </div>
+                                                    <div class="row g-3">
+                                                        <div class="col-sm-6">
+                                                            <label for="categoria-tarea" class="form-label">Categoría</label>
+                                                            <select id="categoria-tarea" class="form-select">
+                                                                <option value="Estudio">📚 Estudio</option>
+                                                                <option value="Trabajo">💻 Trabajo</option>
+                                                                <option value="Personal">🌷 Personal</option>
+                                                                <option value="Hogar">🏡 Hogar</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <label for="prioridad-tarea" class="form-label">Prioridad</label>
+                                                            <select id="prioridad-tarea" class="form-select">
+                                                                <option value="Baja">🟢 Baja</option>
+                                                                <option value="Media" selected>🟡 Media</option>
+                                                                <option value="Alta">🔴 Alta</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary mt-3">＋ Agregar tarea</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <section id="mis-tareas" class="card bg-body-tertiary border-secondary-subtle">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
+                                            <div>
+                                                <h2 class="h5 fw-bold mb-1">Mis tareas</h2>
+                                                <p class="small text-body-secondary mb-0">Ordenadas por prioridad: alta, media y baja.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row g-2 mb-3">
+                                            <div class="col-12 col-lg-5">
+                                                <label for="buscar-tarea" class="visually-hidden">Buscar tareas</label>
+                                                <input type="search" class="form-control" id="buscar-tarea" placeholder="Buscar por tarea o apunte..." autocomplete="off">
+                                            </div>
+                                            <div class="col-6 col-lg-3">
+                                                <label for="filtrar-categoria" class="visually-hidden">Filtrar por categoría</label>
+                                                <select class="form-select" id="filtrar-categoria">
+                                                    <option value="">Todas las categorías</option>
+                                                    <option value="Estudio">Estudio</option>
+                                                    <option value="Trabajo">Trabajo</option>
+                                                    <option value="Personal">Personal</option>
+                                                    <option value="Hogar">Hogar</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6 col-lg-2">
+                                                <label for="filtrar-prioridad" class="visually-hidden">Filtrar por prioridad</label>
+                                                <select class="form-select" id="filtrar-prioridad">
+                                                    <option value="">Prioridad</option>
+                                                    <option value="Alta">Alta</option>
+                                                    <option value="Media">Media</option>
+                                                    <option value="Baja">Baja</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-lg-2 d-grid">
+                                                <button type="button" class="btn btn-outline-secondary" id="limpiar-filtros">Limpiar filtros</button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+                                            <div class="btn-group btn-group-sm" role="group" aria-label="Filtrar tareas por estado">
+                                                <button type="button" class="btn btn-primary filtro-estado active" data-filtro="todas" aria-pressed="true" onclick="filtrarTareas('todas')">Todas</button>
+                                                <button type="button" class="btn btn-outline-secondary filtro-estado" data-filtro="pendientes" aria-pressed="false" onclick="filtrarTareas('pendientes')">Pendientes</button>
+                                                <button type="button" class="btn btn-outline-secondary filtro-estado" data-filtro="completadas" aria-pressed="false" onclick="filtrarTareas('completadas')">Completadas</button>
+                                            </div>
+                                            <span id="resumen-filtros" class="small text-body-secondary" aria-live="polite"></span>
+                                        </div>
+                                        <div id="lista-tareas">
+                                            <p class="text-body-secondary mb-0">Todavía no agregaste ninguna tarea. ¡Empecemos!</p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </main>
+
+                            <footer id="pie-pagina" class="container-fluid px-3 px-md-4 px-xl-5 pb-4">
+                                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 rounded-4 border border-secondary-subtle bg-body-tertiary p-4 p-md-5">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <span class="badge rounded-4 text-bg-primary fs-4 p-3">✦</span>
+                                        <div>
+                                            <p class="small text-primary text-uppercase fw-semibold mb-1">Un espacio hecho para vos</p>
+                                            <h2 class="h5 fw-bold mb-1">¡Buen trabajo hoy, <span data-nombre-usuario>amigo</span>!</h2>
+                                            <p class="small text-body-secondary mb-0">Cada paso que das cuenta. Seguí a tu ritmo.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-3">
+                                        <span class="small text-body-secondary">© <span id="anio-actual"></span> Mi día organizado</span>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="toast-tarea-eliminada" class="toast text-bg-dark border border-secondary-subtle" role="status" aria-live="polite" aria-atomic="true" data-bs-autohide="false">
+                        <div class="d-flex align-items-center">
+                            <div class="toast-body">
+                                <span id="mensaje-tarea-eliminada">Tarea eliminada.</span>
+                                <button type="button" class="btn btn-link link-light btn-sm fw-bold p-0 ms-2" id="deshacer-eliminacion">Deshacer</button>
+                            </div>
+                            <button type="button" class="btn-close btn-close-white me-2" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modal-editar-tarea" tabindex="-1" aria-labelledby="titulo-modal-editar" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg-body-tertiary border-secondary-subtle">
+                            <form id="form-editar-tarea">
+                                <div class="modal-header border-secondary-subtle">
+                                    <h2 class="modal-title fs-5 fw-bold" id="titulo-modal-editar">Editar tarea</h2>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="editar-titulo-tarea" class="form-label">Tarea</label>
+                                        <input type="text" class="form-control" id="editar-titulo-tarea" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="editar-descripcion-tarea" class="form-label">Apunte <span class="text-body-secondary fw-normal">(opcional)</span></label>
+                                        <textarea class="form-control" id="editar-descripcion-tarea" rows="3" placeholder="Agregá un detalle o recordatorio..."></textarea>
+                                    </div>
+                                    <div class="row g-3">
+                                        <div class="col-sm-6">
+                                            <label for="editar-categoria-tarea" class="form-label">Categoría</label>
+                                            <select id="editar-categoria-tarea" class="form-select">
+                                                <option value="Estudio">📚 Estudio</option>
+                                                <option value="Trabajo">💻 Trabajo</option>
+                                                <option value="Personal">🌷 Personal</option>
+                                                <option value="Hogar">🏡 Hogar</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="editar-prioridad-tarea" class="form-label">Prioridad</label>
+                                            <select id="editar-prioridad-tarea" class="form-select">
+                                                <option value="Baja">🟢 Baja</option>
+                                                <option value="Media">🟡 Media</option>
+                                                <option value="Alta">🔴 Alta</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="editar-fecha-tarea" class="form-label">Fecha</label>
+                                            <input type="date" class="form-control" id="editar-fecha-tarea" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer border-secondary-subtle">
+                                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modal-confirmar-eliminacion" tabindex="-1" aria-labelledby="titulo-modal-eliminar" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg-body-tertiary border-secondary-subtle">
+                            <div class="modal-header border-secondary-subtle">
+                                <h2 class="modal-title fs-5 fw-bold" id="titulo-modal-eliminar">¿Eliminar esta tarea?</h2>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="mb-0">Esta acción no se puede deshacer.</p>
+                            </div>
+                            <div class="modal-footer border-secondary-subtle">
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-danger" id="confirmar-eliminar-tarea">Sí, eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="js/script.js?v=21"></script>
+        </body>
+    </html>

@@ -1,0 +1,83 @@
+:root,
+[data-bs-theme="dark"] {
+    color-scheme: dark;
+    --bs-body-bg: #0b0b0e;
+    --bs-body-color: #f4f1fb;
+    --bs-secondary-color: #a5a1b2;
+    --bs-tertiary-bg: #15151b;
+    --bs-tertiary-bg-rgb: 21, 21, 27;
+    --bs-border-color: #2b2a34;
+    --bs-primary: #763cff;
+    --bs-primary-rgb: 118, 60, 255;
+    --bs-success: #20c9a7;
+    --bs-success-rgb: 32, 201, 167;
+    --bs-warning: #f5bc4f;
+    --bs-warning-rgb: 245, 188, 79;
+    --bs-danger: #ff6682;
+    --bs-danger-rgb: 255, 102, 130;
+    --bs-link-color: #a98aff;
+    --bs-link-hover-color: #c4b1ff;
+}
+
+.login-scene {
+    background:
+        radial-gradient(ellipse at 50% 50%, rgba(118, 60, 255, 0.2), transparent 25rem),
+        radial-gradient(ellipse at 12% 18%, rgba(20, 184, 166, 0.18), transparent 25rem),
+        radial-gradient(ellipse at 88% 82%, rgba(236, 72, 153, 0.2), transparent 28rem),
+        linear-gradient(145deg, #100c19, #0b0b0e 55%, #160b16);
+}
+
+#panel-tareas {
+    background-image:
+        radial-gradient(ellipse at 88% 8%, rgba(118, 60, 255, 0.42), transparent 34rem),
+        radial-gradient(ellipse at 14% 38%, rgba(236, 72, 153, 0.28), transparent 30rem),
+        radial-gradient(ellipse at 72% 78%, rgba(20, 184, 166, 0.18), transparent 32rem),
+        linear-gradient(145deg, #130d20 0%, #0b0b0e 48%, #160b16 100%);
+    background-attachment: fixed;
+}
+
+.btn-primary {
+    --bs-btn-bg: #763cff;
+    --bs-btn-border-color: #763cff;
+    --bs-btn-hover-bg: #6228e8;
+    --bs-btn-hover-border-color: #6228e8;
+    --bs-btn-active-bg: #5220d1;
+    --bs-btn-active-border-color: #5220d1;
+    --bs-btn-focus-shadow-rgb: 118, 60, 255;
+}
+
+#dashboard,
+#progreso,
+#mis-tareas,
+#pie-pagina {
+    scroll-margin-top: 5rem;
+}
+
+.anillo-fondo,
+.anillo-categoria {
+    fill: none;
+    stroke-width: 8;
+}
+
+.anillo-fondo {
+    stroke: var(--bs-secondary-bg);
+}
+
+.anillo-categoria {
+    stroke-linecap: round;
+    transition: stroke-dashoffset 300ms ease;
+}
+
+#lista-tareas .btn-outline-danger {
+    --bs-btn-color: #ff8296;
+    --bs-btn-border-color: rgba(255, 102, 130, 0.55);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #e85370;
+    --bs-btn-hover-border-color: #e85370;
+    --bs-btn-active-bg: #d94361;
+    --bs-btn-active-border-color: #d94361;
+}
+
+.task-description {
+    white-space: pre-wrap;
+}
